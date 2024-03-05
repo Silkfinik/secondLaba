@@ -1,0 +1,3 @@
+D:/C++/VSCodeProjects/asm/secondLaba/build/CMakeFiles/asm.dir
+D:/C++/VSCodeProjects/asm/secondLaba/build/CMakeFiles/ALL_BUILD.dir
+D:/C++/VSCodeProjects/asm/secondLaba/build/CMakeFiles/ZERO_CHECK.dir

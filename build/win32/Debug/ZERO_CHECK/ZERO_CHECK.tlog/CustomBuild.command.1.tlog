@@ -1,0 +1,10 @@
+^D:\C++\VSCODEPROJECTS\ASM\SECONDLABA\BUILD\CMAKEFILES\68120AF599A8B28C93CD98E462B95660\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/C++/VSCodeProjects/asm/secondLaba -BD:/C++/VSCodeProjects/asm/secondLaba/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/C++/VSCodeProjects/asm/secondLaba/build/asm.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
