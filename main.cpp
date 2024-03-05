@@ -1,33 +1,20 @@
 #include <iostream>
-#include <vector>
+
 
 int main() {
-    std::vector<int> vec;
-    std::cout << "Enter vector elements (0 to end): ";
-    while (true) {
-        int n;
-        std::cin >> n;
-        if (n == 0) {
-            break;
-        }
-        vec.push_back(n);
+    int size;
+    std::cout << "Enter array size: ";
+    std::cin >> size;
+    int* arr = new int[size];
+    std::cout << "Enter array elements: ";
+    for (int i = 0; i < size; ++i) {
+        std::cin >> arr[i];
     }
-    int vec_size = vec.size();
-    int* vec_ptr = vec.data();
-    int sum = 0;
-    _asm {
-        mov esi, vec_ptr
-        mov ecx, vec_size
-        mov eax, 0
-        loop_start:
-            add eax, [esi]
-            add esi, 4
-            loop loop_start
-        mov sum, eax
+    std::cout << "Array elements: ";
+    for (int i = 0; i < size; ++i) {
+        std::cout << arr[i] << " ";
     }
-    std::cout << "Vector elements: ";
-    for (int i : vec) {
-        std::cout << i << " ";
-    }
-    std::cout << "\nSum of vector elements: " << sum << std::endl;
+    std::cout << std::endl;
+    
+    delete[] arr;
 }
